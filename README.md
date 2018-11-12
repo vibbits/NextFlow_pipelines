@@ -1,8 +1,10 @@
 # NextFlow_pipelines
 Tricks and tips for designing a NextFlow pipeline
 
-
 So I was wondering if we can allow stops in a NextFlow pipeline at some key steps where the user need to examine the output before continue the pipeline. 
+
+the use case where you ask the user from within the pipeline for input is useful in case in the second part of the pipeline, you still want to be able to access intermediate results from the last part.
+That wouldn't be possible with separate sub-pipeline as they don't share a cache.
 
 So we have two questions:
 - ask for user input during pipeline
@@ -19,3 +21,5 @@ but then the best I can come up with now, is give the choice to continue (maybe 
 OPTION 2
 
 2) Group your parameters in the config file per process (see ```cachedParams.nf``` and ```nextflow.config```) and call them like in the test above, when changing one of the values, only the scripts involved will be re-run on a `-resume`
+
+
