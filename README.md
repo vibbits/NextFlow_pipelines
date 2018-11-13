@@ -50,4 +50,4 @@ nextflow run ...
 nextflow run ... --runPart2 -resume
 ```
 OPTION 4 (suggested by nf developer (https://github.com/nextflow-io/nextflow/issues/923#issuecomment-437887855)
-Nextflow is designed for automation therefore interactive data entry is not a supported scenario. I would try to split the pipeline in two, using a glue Bash script to collect user entry and trigger the execution of the second script. Cache is unaffected by the actual name of the script executed. As long as you specify the -resume option it should work as expected."
+Nextflow is designed for automation therefore interactive data entry is not a supported scenario. I would try to split the pipeline in two, using a glue Bash script to collect user entry and trigger the execution of the second script. Cache is unaffected by the actual name of the script executed. As long as you specify the `-resume` option it should work as expected."
