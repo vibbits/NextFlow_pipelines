@@ -1,5 +1,5 @@
 #!/usr/bin/env nextflow
-
+# OT
 myDir = file("./")
 myData = file("./data")
 
