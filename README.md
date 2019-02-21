@@ -1,7 +1,7 @@
 # NextFlow Data Integration Pipelines
 Nextflow is a reactive workflow framework and a programming DSL that eases the writing of data-intensive computational pipelines. 
 
-Here we provide a NextFlow 'automation glue script' which allow users running MOFA and WGCNA in tandem. The glue script first collect user data entry and then triggers the execution of the WCGNA (Ref) and MOFA (Ref) pipelines.
+Here we provide a NextFlow 'automation glue script' which allow users running MOFA and WGCNA in tandem. The glue script first collect user data entry and then triggers the execution of the WCGNA (https://www.ncbi.nlm.nih.gov/pubmed/19114008) and MOFA (https://www.ncbi.nlm.nih.gov/pubmed/29925568) pipelines.
 
 To execute the NextFlow glue script: 
 1) first, make sure you have NextFlow installed (https://www.nextflow.io/docs/latest/getstarted.html).
